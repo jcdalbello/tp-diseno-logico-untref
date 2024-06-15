@@ -1,5 +1,5 @@
-# tp-diseno-logico-untref
-Repositorio del trabajo practico dela asignatura de Diseño Logico de la UNTREF, 2024C2
+# Trabajo Practico Diseño Logico 2024 UNTREF
+Repositorio del trabajo practico de la asignatura de Diseño Logico de la UNTREF, 2024C2
 
 ### Miembros:
 * Agustin Schilliro
