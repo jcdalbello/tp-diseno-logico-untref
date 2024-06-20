@@ -17,11 +17,11 @@ architecture architecture_regs of regs is
 	-- Constante para la cantidad de registros
 	constant CANT_REGISTROS : integer := 16;
     
-    -- Crear un nuevo tipo de dato de arreglo de vectores en el que cada vector funciona como un registro
+	-- Crear un nuevo tipo de dato de arreglo de vectores en el que cada vector funciona como un registro
 	type memoria is array(CANT_REGISTROS-1 downto 0) of std_logic_vector(7 downto 0);
    	
-    -- Crea una señal registros que funcione a modo de conjunto de registros
-    signal registros : memoria;
+	-- Crea una señal registros que funcione a modo de conjunto de registros
+	signal registros : memoria;
 
 begin
 
