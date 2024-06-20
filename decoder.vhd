@@ -28,7 +28,7 @@ begin
 	                   "00" when "14",
 	                   "00" when "20",
 	                   "00" when "21",
-	                   "00" when others;
+	                   else "00";
 
 	with input select
 		alu_op <= "000" when "01",
@@ -43,7 +43,7 @@ begin
 	                  "110" when "14",
 	                  "001" when "20",
 	                  "111" when "21",
-	                  "000" when others;
+	                  else "000";
 
 	with input select
 	        reg_a_we <= "0" when "01",
@@ -58,7 +58,7 @@ begin
 	                    "0" when "14",
 	                    "0" when "20",
 	                    "0" when "21",
-	                    "0" when others;
+	                    else "0";
 
 	with input select
 	        out_we <= "0" when "01",
@@ -73,7 +73,7 @@ begin
 	                  "0" when "14",
 	                  "0" when "20",
 	                  "0" when "21",
-	                  "0" when others;
+	                  else "0";
 
 	with input select
 	        reg_we <= "1" when "01",
@@ -88,6 +88,6 @@ begin
 	                  "1" when "14",
 	                  "1" when "20",
 	                  "1" when "21",
-	                  "1" when others;
+	                  else "0";
 	
 end architecture decoder_architecture;
