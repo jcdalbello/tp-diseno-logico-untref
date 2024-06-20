@@ -8,8 +8,8 @@ entity decoder is
 		bus_sel  : out std_logic_vector(1 downto 0);
 		alu_op   : out std_logic_vector(2 downto 0);
 		reg_a_we : out std_logic;
-        out_we   : out std_logic;
-        reg_we   : out std_logic;
+        	out_we   : out std_logic;
+       	 	reg_we   : out std_logic;
 	);
 end decoder;
 
