@@ -1,17 +1,16 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 
-entity regs is
-	port (
-		clk	  : in  std_logic;
-        reset : in  std_logic;
-        we    : in  std_logic;
-		rd	  : in  std_logic_vector(3 downto 0);
-        rs    : in  std_logic_vector(3 downto 0);
-		din   : in  std_logic_vector(7 downto 0);
-		dout  : out std_logic_vector(7 downto 0)
-	);
-end regs;
+entity regs is 
+Port (
+	clk  : in STD_LOGIC; 
+	rst  : in STD_LOGIC; 
+	we   : in STD_LOGIC; 
+	rd   : in STD_LOGIC_VECTOR (2 downto 0); 
+	rs   : in STD_LOGIC_VECTOR (2 downto 0); 
+	din  : in STD_LOGIC_VECTOR (7 downto 0);
+	dout : out STD_LOGIC_VECTOR (7 downto 0)); 
+end regs; 
 
 architecture architecture_regs of regs is
 
