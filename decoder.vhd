@@ -58,7 +58,11 @@ begin
 	                    '0' when "14",
 	                    '0' when "20",
 	                    '0' when "21",
+<<<<<<< HEAD
 	                    '0' when others;
+=======
+	                    else '0';
+>>>>>>> 1ee329c6f1f44fb56bdd8393bfa1f8d95c5e320e
 
 	with input select
 	        out_we <= '0' when "01",
@@ -73,7 +77,11 @@ begin
 	                  '0' when "14",
 	                  '0' when "20",
 	                  '0' when "21",
+<<<<<<< HEAD
 	                  '0' when others;
+=======
+	                  else '0';
+>>>>>>> 1ee329c6f1f44fb56bdd8393bfa1f8d95c5e320e
 
 	with input select
 	        reg_we <= '1' when "01",
@@ -88,6 +96,10 @@ begin
 	                  '1' when "14",
 	                  '1' when "20",
 	                  '1' when "21",
+<<<<<<< HEAD
 	                  '0' when others;
+=======
+	                  else '0';
+>>>>>>> 1ee329c6f1f44fb56bdd8393bfa1f8d95c5e320e
 	
 end architecture decoder_architecture;
