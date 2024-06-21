@@ -8,9 +8,9 @@ entity decoder is
 		bus_sel  : out std_logic_vector(1 downto 0);
 		alu_op   : out std_logic_vector(2 downto 0);
 		reg_a_we : out std_logic;
-        out_we   : out std_logic;
-       	reg_we   : out std_logic 
-		);
+		out_we   : out std_logic;
+		reg_we   : out std_logic 
+	);
 end decoder;
 
 architecture decoder_architecture of decoder is
@@ -58,11 +58,7 @@ begin
 	                    '0' when "14",
 	                    '0' when "20",
 	                    '0' when "21",
-<<<<<<< HEAD
 	                    '0' when others;
-=======
-	                    else '0';
->>>>>>> 1ee329c6f1f44fb56bdd8393bfa1f8d95c5e320e
 
 	with input select
 	        out_we <= '0' when "01",
@@ -77,11 +73,7 @@ begin
 	                  '0' when "14",
 	                  '0' when "20",
 	                  '0' when "21",
-<<<<<<< HEAD
 	                  '0' when others;
-=======
-	                  else '0';
->>>>>>> 1ee329c6f1f44fb56bdd8393bfa1f8d95c5e320e
 
 	with input select
 	        reg_we <= '1' when "01",
@@ -96,10 +88,6 @@ begin
 	                  '1' when "14",
 	                  '1' when "20",
 	                  '1' when "21",
-<<<<<<< HEAD
 	                  '0' when others;
-=======
-	                  else '0';
->>>>>>> 1ee329c6f1f44fb56bdd8393bfa1f8d95c5e320e
 	
 end architecture decoder_architecture;
