@@ -32,18 +32,18 @@ begin
 
 	with input select
 		alu_op <= "000" when "01",
-	                  "000" when "02",
-	                  "000" when "03",
-	                  "000" when "04",
-	                  "000" when "05",
-	                  "010" when "10",
-	                  "011" when "11",
-	                  "100" when "12",
-	                  "101" when "13",
-	                  "110" when "14",
-	                  "001" when "20",
-	                  "111" when "21",
-	                  "000" when others;
+	                "000" when "02",
+	                "000" when "03",
+	                "000" when "04",
+	                "000" when "05",
+	                "010" when "10",
+	                "011" when "11",
+	                "100" when "12",
+	                "101" when "13",
+	                "110" when "14",
+	                "001" when "20",
+	                "111" when "21",
+	                "000" when others;
 
 	with input select
 	        reg_a_we <= '0' when "01",
