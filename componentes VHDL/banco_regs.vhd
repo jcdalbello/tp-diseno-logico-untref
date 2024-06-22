@@ -3,13 +3,13 @@ use IEEE.std_logic_1164.all;
 
 entity banco_regs is
     port (
-		clk	: in  STD_LOGIC;
-		rst	: in  STD_LOGIC;
-		we	: in  STD_LOGIC;
-		rd	: in  STD_LOGIC_VECTOR (2 downto 0);
-		rs	: in  STD_LOGIC_VECTOR (2 downto 0);
-		din	: in  STD_LOGIC_VECTOR (7 downto 0);
-		dout	: out  STD_LOGIC_VECTOR (7 downto 0)
+		clk	 : in STD_LOGIC;
+		rst	 : in STD_LOGIC;
+		we	 : in STD_LOGIC;
+		rd	 : in STD_LOGIC_VECTOR (2 downto 0);
+		rs	 : in STD_LOGIC_VECTOR (2 downto 0);
+		din	 : in STD_LOGIC_VECTOR (7 downto 0);
+		dout : out STD_LOGIC_VECTOR (7 downto 0)
     );
 end banco_regs;
 
