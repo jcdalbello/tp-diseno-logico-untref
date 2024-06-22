@@ -6,8 +6,8 @@ entity banco_regs is
 		clk	 : in STD_LOGIC;
 		rst	 : in STD_LOGIC;
 		we	 : in STD_LOGIC;
-		rd	 : in STD_LOGIC_VECTOR (2 downto 0);
-		rs	 : in STD_LOGIC_VECTOR (2 downto 0);
+		rd	 : in STD_LOGIC_VECTOR (3 downto 0);
+		rs	 : in STD_LOGIC_VECTOR (3 downto 0);
 		din	 : in STD_LOGIC_VECTOR (7 downto 0);
 		dout : out STD_LOGIC_VECTOR (7 downto 0)
     );
