@@ -3,10 +3,10 @@ use IEEE.std_logic_1164.all;
 
 entity dmux2_1 is
 	port (
-		input	: in STD_LOGIC;
-		sel		: in STD_LOGIC;
-		out_a	: out STD_LOGIC;
-		out_b	: out STD_LOGIC
+		input : in STD_LOGIC;
+		sel	  : in STD_LOGIC;
+		out_a : out STD_LOGIC;
+		out_b : out STD_LOGIC
 	);
 end dmux2_1;
 
