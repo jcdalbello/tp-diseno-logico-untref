@@ -1,7 +1,7 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 
-entity banco_regs is
+entity regs_16 is
     port (
 		clk	 : in STD_LOGIC;
 		rst	 : in STD_LOGIC;
@@ -11,9 +11,9 @@ entity banco_regs is
 		din	 : in STD_LOGIC_VECTOR (7 downto 0);
 		dout : out STD_LOGIC_VECTOR (7 downto 0)
     );
-end banco_regs;
+end regs_16;
 
-architecture banco_regs_architecture of banco_regs is
+architecture regs_16_architecture of regs_16 is
 	signal we_reg1, we_reg2		: STD_LOGIC;
 	signal dout_reg1, dout_reg2	: STD_LOGIC_VECTOR(3 downto 0);
 begin
@@ -50,4 +50,4 @@ begin
 	  sel	 => rs(3),
 	  output => dout
 	);
-end architecture banco_regs_architecture;
+end architecture regs_16_architecture;
