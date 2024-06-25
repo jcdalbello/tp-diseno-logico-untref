@@ -45,9 +45,9 @@ begin
 	);
 
 	mux: entity work.mux2_4 port map (
-	  in_a	 => dout_reg1,
-	  in_b	 => dout_reg2,
-	  sel	 => rs(3),
-	  output => dout
+		in_a   => dout_reg1,
+		in_b   => dout_reg2,
+		sel	   => rs(3),
+		output => dout
 	);
 end architecture regs_16_architecture;

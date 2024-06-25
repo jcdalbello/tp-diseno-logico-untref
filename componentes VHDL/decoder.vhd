@@ -15,6 +15,7 @@ end decoder;
 
 architecture decoder_architecture of decoder is
 begin
+	
 	-- Basado en las funciones reducidas de la consigna 1 del trabajo practico
 	bus_sel(0) <= input(0) and input(2);
 	bus_sel(1) <= input(1) and input(2) and input(4) and input(5);
