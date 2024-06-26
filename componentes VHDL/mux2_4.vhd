@@ -12,5 +12,5 @@ end mux2_4;
 
 architecture mux2_4_architecture of mux2_4 is
 begin
-	output <= (in_a and not sel) or (in_b and sel);
+	output <= in_a when sel='0' else in_b;
 end architecture mux2_4_architecture;
